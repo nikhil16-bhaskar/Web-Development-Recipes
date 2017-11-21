@@ -1,0 +1,64 @@
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" href="style.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <title>student detail</title>
+       <script src="main.js"></script>
+    </head>
+    <body>
+       <br>
+       <div class="container">
+          <div class="row">
+              <div class="jumbotron">
+                      <div class="col-md-12">
+                              <u><b>Welcome to student details.</b></u>
+                      </div>
+              </div>
+          </div>
+          <div class="row">
+               <div class="col-md-12">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid btn_name">
+                            <button type="button" class="btn btn-primary navbar-btn" data-toggle="collapse" data-target="#insert_data" onclick = "insert()"><span class="glyphicon glyphicon-pencil"></span> Insert</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary navbar-btn" data-toggle="collapse" data-target="#search_data" onclick="search()"><span class="glyphicon glyphicon-search"></span> Search</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary navbar-btn" data-toggle="collapse" data-target="#delete_data" onclick="hide()"> Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-primary navbar-btn" data-toggle="collapse" data-target="#edit_data" onclick="edit()"><span class="glyphicon glyphicon-edit"></span> Edit</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-warning navbar-btn navbar-right" id="submit_button" onclick="submitUserAction()">Submit</button>
+                        </div>
+                    </nav>         
+                </div>
+            </div>        
+              <div id="search_data" class="collapse">
+                    <input id="myInput" type="text" placeholder="Search.."/>  
+              </div>  
+              <div id="delete_data" class="collapse">
+                  
+            </div> 
+              <div id="insert_data" class="collapse">
+                    <div class="form-group">
+                            <label for="roll">Roll No:</label>
+                            <input type="text" class="form-control" id="roll">
+                          </div>
+                    <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                     <div class="form-group">
+                            <label for="year">Passing year:</label>
+                            <input type="text" class="form-control" id="year">
+                         </div>                     
+              </div>     
+           <div class="row">
+               <div class="col-md-12">
+                   <table class="table table-bordered table-striped tableinfo" id="tableid">
+                       <tr><td class="chb"></td><td>Name</td><td>Roll</td><td>Year</td></tr>
+                    </table>
+               </div>
+           </div>  
+       </div>
+    </body>
+  </html>  
