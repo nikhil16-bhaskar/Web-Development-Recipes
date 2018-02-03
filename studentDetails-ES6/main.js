@@ -10,30 +10,30 @@ function Insert()
     alert(`All particulars are not filled !!`)
   } 
   else{
-  const trow=document.createElement("tr")
-  const butn=document.createElement("input")
-  butn.setAttribute('type','checkbox')
-  const td_1=document.createElement("td")
-  const td_2=document.createElement("td")
-  const td_3=document.createElement("td")
-  
-  trow.appendChild(butn)
-  trow.appendChild(td_1)
-  trow.appendChild(td_2)
-  trow.appendChild(td_3)
-  
-  td_1.innerHTML= s_name
-  td_2.innerHTML=s_rollno
-  td_3.innerHTML=s_section
-  
-  trow.align="center"
-  butn.align="center"
-  td_1.align="center" 
-  td_2.align="center"
-  td_3.align="center"
-             
- const tabl=document.getElementById('tab')
-  tabl.appendChild(trow)            
+    const trow=document.createElement("tr")
+    const butn=document.createElement("input")
+    butn.setAttribute('type','checkbox')
+    const td_1=document.createElement("td")
+    const td_2=document.createElement("td")
+    const td_3=document.createElement("td")
+
+    trow.appendChild(butn)
+    trow.appendChild(td_1)
+    trow.appendChild(td_2)
+    trow.appendChild(td_3)
+
+    td_1.innerHTML= s_name
+    td_2.innerHTML=s_rollno
+    td_3.innerHTML=s_section
+
+    trow.align="center"
+    butn.align="center"
+    td_1.align="center" 
+    td_2.align="center"
+    td_3.align="center"
+
+    const tabl=document.getElementById('tab')
+    tabl.appendChild(trow)            
 }
 }
 function Delete()
